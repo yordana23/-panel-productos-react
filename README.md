@@ -1,16 +1,31 @@
-# React + Vite
+# Panel de productos con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto académico desarrollado con React y Vite para consultar, registrar y modificar productos mediante una API existente.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Consultar la lista de productos.
+- Registrar productos con validación de datos.
+- Modificar productos existentes.
+- Mostrar mensajes de carga, éxito y error.
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js compatible con la versión de Vite utilizada.
+- npm.
+- API de productos ejecutándose en http://localhost:3000.
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clonar el repositorio.
+2. Ejecutar `npm install`.
+3. Ejecutar `npm run dev`.
+4. Abrir la dirección local mostrada por Vite.
+
+La API debe ejecutarse por separado en el puerto 3000.
+
+## Rutas disponibles
+
+- `/consultar`: muestra la lista de productos.
+- `/insertar`: permite registrar un producto.
+- `/modificar`: permite elegir y editar un producto.
